@@ -30,6 +30,12 @@ public class PersonController {
         return personService.getAllPeople();
     }
 
+    @GetMapping("/xd")
+    public String sayHello() {
+        return "hello2";
+    }
+
+
     @GetMapping(path = "{id}")
     public Person getPersonById(@PathVariable("id") UUID id) {
         return personService.getPersonById(id)

@@ -40,4 +40,7 @@ public class PersonService {
         return personDao.updatePersonById(id, newPerson);
     }
 
+    public String test() {
+        return "test2";
+    }
 }
